@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Japan Work Help Office Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve our services.</p>
+
+  <hr>
+
+  <form id="survey-form" method="post" action="">
+  <fieldset>
+    <label for="name" id="name-label">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+    <label for="email" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+    <label for="number" id="number-label">Age</label>
+    <input type="number" name="age" id="number" min="18" max="120" placeholder="Enter your age...">
+</fieldset>
+<fieldset>
+    <p>Which region of Japan are you currently staying at?</p>
+    <select id="dropdown" required>
+      <option value="">Select region...</option>
+      <option value="hokkaido">Hokkaido</option>
+      <option value="tohoku">Tohoku</option>
+      <option value="kanto">Kanto</option>
+      <option value="chubu">Chubu</option>
+      <option value="kansai">Kansai</option>
+      <option value="chugoku">Chugoku</option>
+      <option value="shikoku">Shikoku</option>
+      <option value="kyushu">Kyushu</option>
+    </select>
+
+    <p>How many years of professional experience do you have?</p>
+    <label for="experience-1"><input type="radio" name="experience" id="experience-1" value="1" class="inline"> Less than 1 year</label>
+    <label for="experience-2"><input type="radio" name="experience" id="experience-2" value="2" class="inline"> 2 to 5 years</label>
+    <label for="experience-3"><input type="radio" name="experience" id="experience-3" value="3" class="inline"> 6 to 10 years</label>
+    <label for="experience-4"><input type="radio" name="experience" id="experience-4" value="4" class="inline"> More than 10 years</label>
+
+    <p>In which industries would you like to work?</p>
+    <label for="industry-1"><input type="checkbox" name="industry" id="industry-1" value="1" class="inline"> Automotive</label>
+    <label for="industry-2"><input type="checkbox" name="industry" id="industry-2" value="2" class="inline"> Medical/Healthcare</label>
+    <label for="industry-3"><input type="checkbox" name="industry" id="industry-3" value="3" class="inline"> Oil & Gas</label>
+    <label for="industry-4"><input type="checkbox" name="industry" id="industry-4" value="4" class="inline"> Construction</label>
+    <label for="industry-5"><input type="checkbox" name="industry" id="industry-5" value="5" class="inline"> Software/Web</label>
+    <label for="industry-6"><input type="checkbox" name="industry" id="industry-6" value="6" class="inline"> Aerospace</label>
+</fieldset>
+<fieldset>
+    <label for="misc">Any other information?</label>
+    <textarea id="misc" cols="40" rows="15"></textarea>
+</fieldset>
+    <button id="submit">Submit</button>
+  </form>
+</body>
+
+</html>
